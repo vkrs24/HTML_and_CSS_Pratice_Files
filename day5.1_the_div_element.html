@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day5.1_the_div_element</title>
+    <style>
+      p {
+        margin: 0;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+      }
+      .div1 {
+        width: 250px;
+        display: inline-block;
+        border: solid;
+        border-width: 1px;
+        border-color: rgb(138, 127, 127);
+        padding: 20px;
+      }
+      .p1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .btn1,
+      .btn2 {
+        margin-top: 5px;
+        cursor: pointer;
+      }
+
+      .div2 {
+        width: 250px;
+        display: inline-block;
+        border: none;
+        background-color: rgb(43, 41, 41);
+        padding: 15px;
+      }
+      .p2_1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 5px;
+      }
+      .p2_2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: rgb(173, 161, 161);
+        margin-top: 5px;
+      }
+      .div3 {
+        display: inline-block;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.7);
+      }
+      .img4 {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 20px;
+        vertical-align: middle;
+      }
+      .text-tweet {
+        border: none;
+        vertical-align: middle;
+      }
+      .tweet {
+        background-color: rgb(16, 92, 168);
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: none;
+        font-size: 12px;
+        border-radius: 15px;
+      }
+      .div4 {
+        display: inline-block;
+        width: 100px;
+        padding-bottom: 5px;
+        box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
+        margin-right: 10px;
+      }
+      .img-spy {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: left;
+        margin-bottom: 3px;
+      }
+      .name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        margin-left: 5px;
+      }
+      .frnd {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8px;
+        font-weight: 600;
+        color: rgb(98, 102, 98);
+        line-height: 15px;
+        margin-left: 5px;
+      }
+      .add_frnd {
+        background-color: rgb(12, 110, 208);
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      .div5 {
+        display: inline-block;
+        width: 100px;
+        padding-bottom: 5px;
+        box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+      .img-spy2 {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: right;
+        margin-bottom: 3px;
+      }
+      .div6 {
+        width: 350px;
+        height: auto;
+        padding-bottom: 15px;
+        display: inline-block;
+        box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+      .google {
+        display: block;
+        width: 150px;
+        margin: 0 28.8%;
+        margin-bottom: 5px;
+      }
+      .google-search-bar {
+        width: 250px;
+        padding: 4px 15px;
+        border-radius: 20px;
+        display: block;
+        border: none;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+        margin: 0 10%;
+        margin-bottom: 10px;
+      }
+
+      .google-search-btn {
+        background-color: rgb(235, 237, 240);
+        color: black;
+        font-size: 10px;
+        font-weight: bold;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        margin-left: 17%;
+      }
+      .imfeeling-btn {
+        background-color: rgb(235, 237, 240);
+        color: black;
+        font-size: 10px;
+        font-weight: bold;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        margin-left: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <br />
+    <br />
+    <div class="box2"></div>
+    <br />
+    <br />
+    <div class="div1">
+      <p class="p1">Satisfied with our service?</p>
+      <button class="btn1">Yes</button>
+      <button class="btn2">No</button>
+    </div>
+    <br />
+    <br />
+    <div class="div2">
+      <p class="p2_1">Install YouTube Music</p>
+      <p class="p2_2">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+    <br />
+    <br />
+    <div class="div3">
+      <img class="img4" src="/images/spider.jpg" alt="spider" />
+      <input class="text-tweet" type="text" placeholder="What's happening?" />
+      <button class="tweet">Tweet</button>
+    </div>
+    <br />
+    <br />
+    <div class="div4">
+      <img src="/images/spider.jpg" alt="spider" class="img-spy" />
+      <p class="name">Vasanth</p>
+      <p class="frnd">2 mutual friends</p>
+      <button class="add_frnd">Add Friend</button>
+    </div>
+    <div class="div5">
+      <img src="/images/spider.jpg" alt="spider" class="img-spy2" />
+      <p class="name">Sruthi</p>
+      <p class="frnd">2 mutual friends</p>
+      <button class="add_frnd">Add Friend</button>
+    </div>
+    <br />
+    <br />
+    <div class="div6">
+      <img src="/images/google.jpg" alt="google" class="google" />
+      <input
+        class="google-search-bar"
+        type="text"
+        placeholder="Search Google or type a URL"
+      />
+      <button class="google-search-btn">Google Search</button>
+      <button class="imfeeling-btn">I'm Feeling Lucky</button>
+    </div>
+  </body>
+</html>

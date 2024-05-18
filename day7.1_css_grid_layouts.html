@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day7.1_css_grid_layouts</title>
+    <style>
+      p {
+        margin: 0;
+      }
+      .grid1 {
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+      .div1 {
+        background-color: skyblue;
+      }
+      .div2 {
+        background-color: pink;
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+      .grid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+      .grid4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+      }
+      .container4 {
+        display: inline-block;
+        padding-bottom: 2px;
+        width: 134px;
+        height: auto;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
+      .img-section {
+        width: 130px;
+        height: 130px;
+        padding: 2px;
+      }
+      .st {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .grid-content {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        column-gap: 5px;
+        margin: 3px 0px;
+        align-items: center;
+      }
+      .content-section {
+        width: 130px;
+        margin-left: 2px;
+      }
+      .names {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .div-mutual-img {
+        width: 20px;
+        height: 20px;
+      }
+      .mutual-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+      }
+      .mutual {
+        font-size: 13px;
+        font-weight: bold;
+        color: rgb(88, 84, 84);
+      }
+      .add_frnd {
+        background-color: rgb(8, 114, 184);
+        border: none;
+        color: white;
+        padding: 7px 15px;
+        border-radius: 3px;
+        font-size: 10px;
+        cursor: pointer;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid1">
+      <div class="div1">200px</div>
+      <div class="div2">75px</div>
+    </div>
+    <br />
+    <br />
+    <div class="grid2">
+      <div class="div1">col1</div>
+      <div class="div2">col2</div>
+      <div class="div1">col3</div>
+    </div>
+    <br />
+    <br />
+    <div class="grid3">
+      <div class="div1">col1</div>
+      <div class="div2">col2</div>
+      <div class="div1">col3</div>
+      <div class="div2">col4</div>
+      <div class="div1">col5</div>
+      <div class="div2">col6</div>
+      <div class="div1">col7</div>
+      <div class="div2">col8</div>
+    </div>
+    <br />
+    <br />
+    <div class="grid4">
+      <div class="container4">
+        <div class="img-section">
+          <img src="/images/st.png" alt="style" class="st" />
+        </div>
+        <div class="content-section">
+          <p class="names">Vasanth</p>
+          <div class="grid-content">
+            <div class="div-mutual-img">
+              <img
+                src="/images/Avengers.jpg"
+                alt="Avengers"
+                class="mutual-img"
+              />
+            </div>
+            <div>
+              <p class="mutual">4 mutual friends</p>
+            </div>
+          </div>
+          <button class="add_frnd">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="container4">
+        <div class="img-section">
+          <img src="/images/st.png" alt="style" class="st" />
+        </div>
+        <div class="content-section">
+          <p class="names">Vasanth</p>
+          <div class="grid-content">
+            <div class="div-mutual-img">
+              <img
+                src="/images/Avengers.jpg"
+                alt="Avengers"
+                class="mutual-img"
+              />
+            </div>
+            <div>
+              <p class="mutual">4 mutual friends</p>
+            </div>
+          </div>
+          <button class="add_frnd">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="container4">
+        <div class="img-section">
+          <img src="/images/st.png" alt="style" class="st" />
+        </div>
+        <div class="content-section">
+          <p class="names">Vasanth</p>
+          <div class="grid-content">
+            <div class="div-mutual-img">
+              <img
+                src="/images/Avengers.jpg"
+                alt="Avengers"
+                class="mutual-img"
+              />
+            </div>
+            <div>
+              <p class="mutual">4 mutual friends</p>
+            </div>
+          </div>
+          <button class="add_frnd">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="container4">
+        <div class="img-section">
+          <img src="/images/st.png" alt="style" class="st" />
+        </div>
+        <div class="content-section">
+          <p class="names">Vasanth</p>
+          <div class="grid-content">
+            <div class="div-mutual-img">
+              <img
+                src="/images/Avengers.jpg"
+                alt="Avengers"
+                class="mutual-img"
+              />
+            </div>
+            <div>
+              <p class="mutual">4 mutual friends</p>
+            </div>
+          </div>
+          <button class="add_frnd">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

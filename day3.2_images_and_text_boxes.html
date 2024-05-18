@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day3.2_images_and_text_boxes</title>
+    <style>
+      p {
+        margin: 0px 0px;
+      }
+      .img1 {
+        width: 100px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+      .img2 {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .img3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+      .search-bar {
+        width: 150px;
+        padding: 5px 5px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 0.8px;
+      }
+      .google-search-bar {
+        width: 300px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+      }
+      .email {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        color: rgb(104, 103, 103);
+        margin-bottom: 5px;
+      }
+      .i-email {
+        width: 200px;
+      }
+      .email-desc {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8.3px;
+        color: rgb(104, 103, 103);
+        line-height: 30px;
+      }
+      .linkd {
+        background-color: rgb(15, 79, 198);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 7px 65px;
+        border-radius: 15px;
+      }
+      .img4 {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 20px;
+        vertical-align: middle;
+      }
+      .text-tweet {
+        border: none;
+        vertical-align: middle;
+      }
+      .tweet {
+        background-color: rgb(16, 92, 168);
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: none;
+        font-size: 12px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <img class="img1" src="/images/spider.jpg" alt="spider" />
+    <br />
+    <br />
+    <img class="img2" src="/images/spider.jpg" alt="spider" />
+    <br />
+    <br />
+    <img class="img3" src="/images/spider.jpg" alt="spider" />
+    <br />
+    <br />
+    <input class="search-bar" type="text" placeholder="Search" />
+    <br />
+    <br />
+    <input
+      class="google-search-bar"
+      type="text"
+      placeholder="Search Google or type a URL"
+    />
+    <br />
+    <br />
+    <p class="email">Email</p>
+    <input type="email" class="i-email" />
+    <p class="email-desc">
+      By clicking Agree & Join, you agree to the Privacy Policy.
+    </p>
+    <button class="linkd">Agree & Join</button>
+    <br />
+    <br />
+    <img class="img4" src="/images/spider.jpg" alt="spider" />
+    <input class="text-tweet" type="text" placeholder="What's happening?" />
+    <button class="tweet">Tweet</button>
+  </body>
+</html>

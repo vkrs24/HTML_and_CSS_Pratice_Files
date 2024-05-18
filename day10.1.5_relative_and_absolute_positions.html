@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day10.1.5_relative_and_absolute_positions</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+      }
+      .shirt {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .offer {
+        color: white;
+        background-color: black;
+        font-size: 15px;
+        padding: 5px 8px;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+      }
+      .blank {
+        background-color: rgb(195, 192, 192);
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        opacity: 0.8;
+      }
+      .add-cnt {
+        position: absolute;
+        bottom: 30px;
+        right: 115px;
+      }
+      .add {
+        padding: 10px;
+        cursor: pointer;
+        border: solid;
+        border-color: black;
+        border-width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/images/shirt.webp" alt="shirt" class="shirt" />
+      <div class="offer">20% OFF</div>
+      <div class="blank"></div>
+      <div class="add-cnt">
+        <button class="add">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

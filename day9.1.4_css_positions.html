@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day9.1.4_css_positions</title>
+    <style>
+      body {
+        height: 3000px;
+        margin: 0;
+      }
+      p {
+        margin: 0px;
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        background-color: green;
+        color: white;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .model {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        width: 220px;
+        height: 68px;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        right: 40%;
+        bottom: 40%;
+      }
+      .p1 {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .p2 {
+        font-size: 12px;
+        line-height: 25px;
+      }
+      .close {
+        width: 40px;
+        font-size: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">right sidebar</div>
+    <div class="overlay"></div>
+    <div class="model">
+      <p class="p1">Modal Title</p>
+      <p class="p2">This is a modal</p>
+      <button class="close">Close</button>
+    </div>
+  </body>
+</html>

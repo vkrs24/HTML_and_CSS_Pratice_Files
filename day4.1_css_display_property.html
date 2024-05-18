@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day4.1_css_display_property</title>
+    <style>
+      p {
+        margin: 0;
+      }
+      .name {
+        padding: 5px 5px;
+        font-size: 12px;
+        width: 140px;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .email {
+        padding: 5px 5px;
+        font-size: 12px;
+        width: 140px;
+        display: block;
+        margin-top: 5px;
+      }
+      .p1 {
+        width: 190px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      .btn1,
+      .btn2 {
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      .google {
+        display: block;
+        width: 150px;
+        margin: 0px 40%;
+      }
+      .google-search-bar {
+        width: 250px;
+        padding: 4px 15px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+        margin: 0px 30%;
+      }
+      .f_name,
+      .l_name {
+        padding: 5px 5px;
+        font-size: 12px;
+        width: 61px;
+        margin-bottom: 5px;
+      }
+      .sign_up {
+        background-color: rgb(19, 74, 203);
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 7px 54px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .uber-desc {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+      .pick_up {
+        width: 240px;
+        background-color: rgb(235, 237, 240);
+        border: none;
+        padding: 8px;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .desti {
+        width: 240px;
+        background-color: rgb(235, 237, 240);
+        border: none;
+        padding: 8px;
+        display: block;
+        margin-top: 5px;
+      }
+      .request-btn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 15px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+      .schedule-btn {
+        background-color: rgb(235, 237, 240);
+        color: black;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 15px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="name" placeholder="Name" />
+    <input type="email" class="email" placeholder="Email" />
+    <br />
+    <br />
+    <p class="p1">
+      Thanks for chatting with our customer support. Would you like to take our
+      quick survey?
+    </p>
+    <button class="btn1">Yes</button>
+    <button class="btn2">No</button>
+    <br />
+    <br />
+    <img src="/images/google.jpg" alt="google" class="google" />
+    <input
+      class="google-search-bar"
+      type="text"
+      placeholder="Search Google or type a URL"
+    />
+    <br />
+    <br />
+    <input type="text" class="f_name" placeholder="First Name" />
+    <input type="text" class="l_name" placeholder="Last Name" />
+    <input type="email" class="email" placeholder="Email" />
+    <button class="sign_up">Sign Up</button>
+    <br />
+    <br />
+    <p class="uber-desc">Request a ride now</p>
+    <input type="text" class="pick_up" placeholder="Enter pickup location" />
+    <input type="text" class="desti" placeholder="Enter destination" />
+    <button class="request-btn">Request</button>
+    <button class="schedule-btn">Schedule for later</button>
+  </body>
+</html>

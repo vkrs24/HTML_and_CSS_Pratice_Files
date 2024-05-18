@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day8.1_nested_flexbox</title>
+    <style>
+      p {
+        margin: 0;
+      }
+      .nest_flex1 {
+        display: flex;
+        height: 50px;
+        flex-direction: row;
+      }
+      .section1 {
+        width: 100px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section2 {
+        width: 200px;
+        background-color: lightcoral;
+      }
+      .item1 {
+        background-color: black;
+        color: white;
+      }
+      .p2 {
+        background-color: black;
+        color: white;
+      }
+      .section1-flex2 {
+        width: 100px;
+        background-color: lightblue;
+      }
+      .section2-flex2 {
+        width: 200px;
+        background-color: lightcoral;
+        display: flex;
+        flex-direction: column;
+      }
+      .flex2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .container1 {
+        width: 341px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+        padding: 15px 0px 15px 15px;
+      }
+      .top {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(109, 109, 109);
+        font-weight: bold;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+      }
+      .profile {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 50%;
+      }
+      .bottom-content {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px;
+      }
+      .bottom-content-top-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .cp1 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .cp2 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+      }
+      .cp3 {
+        font-size: 13px;
+        color: rgb(109, 109, 109);
+      }
+      .time {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(109, 109, 109);
+        margin-left: 50px;
+      }
+      .container2 {
+        width: 341px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0px 15px 15px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+      }
+      .container3 {
+        width: 369px;
+        padding: 5px;
+        height: 140px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+      }
+      .con3-top {
+        width: 369px;
+        height: 55px;
+        margin-bottom: 10px;
+      }
+      .prof {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+      }
+      .con3-content1 {
+        display: inline-block;
+        vertical-align: middle;
+        width: 310px;
+        margin-left: 5px;
+      }
+      span {
+        color: rgb(86, 86, 86);
+      }
+      .con3p1 {
+        font-weight: bold;
+      }
+      .con3p2 {
+        font-weight: 500;
+        line-height: 18px;
+      }
+      .con3-bottom {
+        width: 290px;
+        height: 70px;
+        border: solid;
+        border-width: 0.8px;
+        border-color: rgb(169, 169, 169);
+        border-radius: 15px;
+        margin-left: 55px;
+      }
+      .con3-blank {
+        width: 70px;
+        height: 70px;
+        background-color: gainsboro;
+        display: inline-block;
+        vertical-align: middle;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      .con3-content2 {
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        display: inline-block;
+        margin-left: -4px;
+        vertical-align: middle;
+      }
+      .con3p3 {
+        color: rgb(86, 86, 86);
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .con3p4 {
+        font-weight: 500;
+        line-height: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nest_flex1">
+      <div class="section1">
+        <p class="item1">item1</p>
+      </div>
+      <div class="section2"></div>
+    </div>
+    <br />
+    <br />
+    <div class="nest_flex1">
+      <div class="section1-flex2"></div>
+      <div class="section2-flex2">
+        <p class="p1">row1</p>
+        <div class="flex2">
+          <p class="p2">row2</p>
+          <p class="p2">row2</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container1">
+      <div class="top">All INBOXES</div>
+      <div class="bottom">
+        <img src="/images/spider.jpg" alt="spider" class="profile" />
+        <div class="bottom-content">
+          <div class="bottom-content-top-flex">
+            <p class="cp1">Chewy Promotions</p>
+            <div class="time">4:58 PM</div>
+          </div>
+          <p class="cp2">Biggest sales of the year!</p>
+          <p class="cp3">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container2">
+      <div class="top">All INBOXES</div>
+      <div class="bottom">
+        <img src="/images/spider.jpg" alt="spider" class="profile" />
+        <div class="bottom-content">
+          <div class="bottom-content-top-flex">
+            <p class="cp1">Chewy Promotions</p>
+            <div class="time">4:58 PM</div>
+          </div>
+          <p class="cp2">Biggest sales of the year!</p>
+          <p class="cp3">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <img src="/images/spider.jpg" alt="spider" class="profile" />
+        <div class="bottom-content">
+          <div class="bottom-content-top-flex">
+            <p class="cp1">Chewy Promotions</p>
+            <div class="time">4:58 PM</div>
+          </div>
+          <p class="cp2">Biggest sales of the year!</p>
+          <p class="cp3">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <img src="/images/spider.jpg" alt="spider" class="profile" />
+        <div class="bottom-content">
+          <div class="bottom-content-top-flex">
+            <p class="cp1">Chewy Promotions</p>
+            <div class="time">4:58 PM</div>
+          </div>
+          <p class="cp2">Biggest sales of the year!</p>
+          <p class="cp3">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container3">
+      <div class="con3-top">
+        <img src="/images/st.png" alt="st" class="prof" />
+        <div class="con3-content1">
+          <p class="con3p1">Stylesimple.asme <span>@StyleSimpleAsMe</span></p>
+          <p class="con3p2">
+            What is backend web development? A complete overview. New video is
+            up!
+          </p>
+        </div>
+      </div>
+      <div class="con3-bottom">
+        <div class="con3-blank"></div>
+        <div class="con3-content2">
+          <p class="con3p3">youtube.com</p>
+          <p class="con3p4">
+            Backend web development - a complete overview (2024)
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
